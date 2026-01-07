@@ -1,4 +1,4 @@
-const Attendance = require("../models/Attendance");
+const Attendance = require("../models/attendance.model");
 
 exports.mark = async (req, res) => {
   res.status(201).json(await Attendance.create(req.body));

@@ -1,4 +1,4 @@
-const Student = require("../models/Student");
+const Student = require("../models/student.model");
 
 exports.create = async (req, res) => {
   res.status(201).json(await Student.create(req.body));
